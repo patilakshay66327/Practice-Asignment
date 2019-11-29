@@ -24,7 +24,7 @@ namespace PracticeAssignment.Controllers
         [HttpGet]
         public IEnumerable<LeadDetails> GetLeadDetails()
         {
-            return _context.LeadDetails;
+            return _context.LeadDetails.ToList();
         }
 
         // GET: api/LeadDetail/5
